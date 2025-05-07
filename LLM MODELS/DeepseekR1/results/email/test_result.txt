@@ -1,0 +1,7 @@
+Insider Threat Insights:
+- Total emails analyzed: 1000
+- Critical risks: 18
+- High risks: 164
+- Suspicious attachments (>3): 20
+- After-hours communications: 0
+- Average risk score: 1.07

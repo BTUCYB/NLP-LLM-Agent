@@ -1,0 +1,7 @@
+Device Threat Insights:
+- Total activities analyzed: 1000
+- Critical risks: 0
+- High risks: 25
+- Late night activities (8PM-6AM): 20
+- Weekend activities: 50
+- Average risk score: 0.55
