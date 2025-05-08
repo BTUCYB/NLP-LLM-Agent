@@ -1,0 +1,26 @@
+Insider Threat Intelligence Report
+==============================================
+Total Analyzed Activities: 1000
+Time Window: 2010-01-02 07:00:00 to 2010-01-05 18:00:00
+
+Risk Classification Summary:
+- CRITICAL: 0
+- HIGH: 50
+- MEDIUM: 690
+- LOW: 260
+
+Temporal Patterns:
+- Night Activities (8PM-6AM): 63
+- Weekend Activities: 50
+
+Top Risky Users:
+IRM0931: 4 alerts
+EHB0420: 3 alerts
+JKJ0698: 3 alerts
+LAP0338: 3 alerts
+AOK0844: 2 alerts
+
+Recommendations:
+1. Investigate CRITICAL/HIGH risk activities immediately
+2. Review night/weekend access policies
+3. Conduct user behavior analysis for top risk profiles
