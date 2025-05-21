@@ -12,7 +12,8 @@ csv_files = [
     'email_2010_part2.csv',
     'email_2011.csv',
     'file_cleaned.csv',
-    'logon_clean.csv'
+    'logon_clean.csv',
+    'http_cleaned.csv'
 ]
 
 # === Field → Entity Type mapping ===
@@ -38,23 +39,25 @@ field_type_map = {
     'content_clean': 'content',
     'id': 'log',
     'size': 'value',
-    'year': 'time'
+    'year': 'time',
+    'url': 'url'
 }
 
 # === Node color by entity type ===
 type_colors = {
-    'user': '#66cc66',
-    'pc': '#66ccff',
-    'email': '#cc66ff',
-    'file': '#ffa500',
-    'tweet': '#999999',
-    'activity': '#ff6666',
-    'content': '#dddd00',
-    'time': '#00cccc',
-    'date': '#cccccc',
-    'log': '#aaaaaa',
-    'value': '#ffcc00',
-    'other': '#dddddd'
+    'user': '	#a7d3f2', #Soft Sky Blue
+    'pc': '	#b6e2d3', #Light Mint Green
+    'email': '#d7bde2', #Pale Lavender
+    'file': '#f7b7a3', #Light Coral Pink
+    'tweet': '#f9d5a7', #Pastel Orange
+    'activity': '#faf3a0', #Lemon Cream Yellow
+    'content': '#b2ebf2', #Pale Turquoise
+    'time': '#fadadd', #Baby Pink
+    'date': '	#ffe5b4', #Peach Puff
+    'log': '#d4eac8', #Pastel Green
+    'value': '#f5e1a4', #Cream Beige
+    'other': '#c9daea',#Misty Blue
+    'url': '#e3d0ff' #Powder Lilac
 }
 
 # === Settings ===
@@ -68,7 +71,7 @@ edges = set()
 # === Process each CSV file ===
 for file_path in csv_files:
     if not os.path.exists(file_path):
-        print(f"❌ File not found: {file_path}")
+        print(f"❌ File not found：{file_path}")
         continue
 
     df = pd.read_csv(file_path)
@@ -76,6 +79,7 @@ for file_path in csv_files:
 
     for _, row in df.iterrows():
         field_nodes = []
+        tooltips = []
 
         for col in row.index:
             if col.lower() in skip_fields:
