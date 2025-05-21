@@ -1,6 +1,6 @@
 """
 Insider Threat Detection System - Logon Analysis Module
-Author: [Your Name]
+Author: Kueh Joo Hock
 Date: [Date]
 
 This module implements feature extraction and risk analysis for logon activities

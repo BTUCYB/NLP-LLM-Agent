@@ -1,0 +1,13 @@
+Metric,Value,Explanation
+Accuracy,0.8000,Overall classification correctness
+Precision,0.7778,Trustworthiness of threat alerts
+Recall,87.50%,True threat detection capability
+F1 Score,0.8235,Balance between precision and recall
+ROC AUC,0.9643,Class separation capability
+PR AUC,0.9750,Performance on imbalanced data
+Log Loss,0.4561,Probability calibration quality
+Detection Rate,87.50%,Equivalent to recall
+False Positive Rate,28.57%,Normal activities flagged as threats
+Specificity,71.43%,True negative identification
+Balanced Accuracy,79.46%,Class-imbalance aware accuracy
+MCC,0.6001,Comprehensive correlation measure
